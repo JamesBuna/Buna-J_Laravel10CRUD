@@ -5,8 +5,8 @@
     <div class="card">
         <div class="card-header">
             <h2>
-                Laravel 10 CRUD – (Insert your full name here)
-                <a class="btn btn-primary float-end" href="{{ route('products.create') }}"> Create New Product</a>
+                Laravel 10 CRUD – (Add your Product here)
+                <a class="btn btn-primary float-end" href="{{ route('products.create') }}"> Add New Product</a>
             </h2>
         </div>
         <div class="card-body">
@@ -31,7 +31,7 @@
                     <td>{{ $product->price }}</td>
                     <td>{{ $product->description }}</td>
                     <td>
-                        <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                        <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">View</a>
                         <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                         <form action="{{ route('products.destroy',$product->id) }}" method="POST" class="d-inline">
                             @csrf

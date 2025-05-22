@@ -5,7 +5,7 @@
     <div class="card">
         <div class="card-header">
             <h2>
-                Show Product
+                View Product
                 <a class="btn btn-danger float-end" href="{{ route('products.index') }}"> Back</a>
             </h2>
         </div>
